@@ -1,0 +1,4 @@
+# python ignre
+.idea/
+*.png
+*.gz
