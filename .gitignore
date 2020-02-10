@@ -1,5 +1,6 @@
 # python ignre
-data/
 .idea/
 *.png
 *.gz
+data/
+read2.txt
