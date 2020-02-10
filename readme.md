@@ -1,7 +1,7 @@
-# READ ME
+# Read me
 
 ## Introduction 
-This software is aimed to read satellite altimetry data of the netCDF format.
+This software is aimed to read satellite altimetry data of the netCDF format. It is not finished yet!!!
 The netCDF4 lib is used under python3.
 This software is aimed to:
 - Read Sentinel-3A SRAL data, including the waveform data, analysis data and show data in
