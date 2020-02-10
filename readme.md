@@ -14,7 +14,8 @@ You can download data example from [here](https://www.jianguoyun.com/p/DfGdEB8Q2
 - Download the py file and example data.
 - Change to correct file dir in the py file.
 ## LICENSE
-LICEnSE:GNU,you can use it free
-## Contact
-If you have any problems,do not be hesitate contact me!
-Autor:yangleir@qq.com
+Copyright (c) 2019-2020 by the yanglei.
+
+<b>altimeter_read</b> is released under the [GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl.html) version 3 or any later version.
+## Software support
+For general questions, do not be hesitate contact me:yangleir@qq.com
