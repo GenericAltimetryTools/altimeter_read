@@ -4,3 +4,6 @@
 *.gz
 data/
 read2.txt
+testsave.py
+readhy2b_copy.py
+readsa3_copy.py
