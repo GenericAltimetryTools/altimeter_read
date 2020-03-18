@@ -10,6 +10,9 @@ figures.
 - ...
 ## data example
 You can download data example from [here](https://www.jianguoyun.com/p/DfGdEB8Q2PCQBxidq9YC).
+The waveform will be plotted as:
+![](/waveform.png)
+
 ## usage
 - Download the py file and example data.
 - Change to correct file dir in the py file.

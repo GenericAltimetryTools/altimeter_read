@@ -14,9 +14,9 @@ import pickle
 from os.path import expanduser
 import os
 
-home = expanduser("~")
+
 # ------ Directory contains sentinel3A SRAL data
-dir_setup = os.path.join(home, 'alti_data', 'S3A_SR_2_WAT____20170119T125426_20170119T134245_20170214T065922_2899_013_223______MAR_O_NT_002.SEN3')
+dir_setup = os.path.join('..\ex_data', 'S3A_SR_2_WAT____20181229T021438_20181229T025856_20190123T183000_2658_039_317______MAR_O_NT_003.SEN3')
 # ------ Name of the SRAL file. There have three kinds of S3A data which are the enhanced,standard and the reduced data.
 # ------ Here we choose the enhanced data because it contains the waveform data.
 file_path = os.path.join(dir_setup, 'enhanced_measurement.nc')
@@ -64,14 +64,19 @@ print(type(tim))
 
 # --------------------------
 # Plot wavform
-myslice = slice(34980, 20000, -500)
-x = np.arange(1, 129, 1)
+maxd = len(lat)
+interv = 400
+# myslice = slice(maxd, 0, -10)
+myslice = slice(0, maxd, interv)  # Here you can control the interval by 'interv'.
+                                  # Then the figures will show different waveforms.
+x = np.arange(1, 129, 1)  # This is the bin index. Is constant number for each satellite.
 y = np.array(wav[myslice, :])
 # print(len(y))
 lat2 = np.array(lat[myslice])
+
 # Plot waveforms on one figure
-# for i in range(1, 200):
-#     plt.plot(x, y[i], 'r')
+for i in range(1, 16):
+    plt.plot(x, y[i], 'r')
 
 # Plot waveforms on sub figures
 figsize = (10, 8)

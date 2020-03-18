@@ -76,7 +76,7 @@ range_ocean_rms_01_plrm_ku
 range_ocean_numval_01_ku
 range_ocean_numval_01_c
 range_ocean_numval_01_plrm_ku
-filtered_range_ocean_20_ku
+interpolated_c_band_range_ocean_20_ku
 sig0_ocean_01_ku
 sig0_ocean_01_c
 sig0_ocean_01_plrm_ku
@@ -146,6 +146,7 @@ range_ice_sheet_20_c
 sig0_ice_sheet_20_ku
 sig0_ice_sheet_20_c
 elevation_ice_sheet_20_ku
+elevation_ocog_20_ku
 range_ice_20_ku
 range_ice_20_c
 range_ice_20_plrm_ku
@@ -360,3 +361,11 @@ flag_man_thrust_20_ku
 flag_man_thrust_20_c
 flag_man_plane_20_ku
 flag_man_plane_20_c
+index_1hz_meas_20_ku
+index_1hz_meas_20_c
+index_first_20hz_meas_01_ku
+index_first_20hz_meas_01_c
+num_20hz_meas_01_ku
+num_20hz_meas_01_c
+orbit_type_01
+waveform_qual_ice_20_ku

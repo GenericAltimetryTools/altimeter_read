@@ -2,7 +2,12 @@
 .idea/
 *.png
 *.gz
+*.txt
+*.npy
+*.dat
 data/
+ex_data/
+
 read2.txt
 testsave.py
 readhy2b_copy.py
