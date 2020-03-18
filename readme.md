@@ -12,7 +12,7 @@ figures.
 You can download data example from [here](https://www.jianguoyun.com/p/DfGdEB8Q2PCQBxidq9YC).
 
 The waveform will be plotted as:
-![](./waveform.png)
+![](waveform.png)
 
 ## usage
 - Download the py file and example data.
