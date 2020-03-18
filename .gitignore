@@ -2,8 +2,8 @@
 .idea/
 *.png
 *.gz
-*.txt
-*.npy
+alti_read/*.txt
+alti_read/*.npy
 *.dat
 data/
 ex_data/
