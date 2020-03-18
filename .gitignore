@@ -1,6 +1,5 @@
 # python ignre
 .idea/
-*.png
 *.gz
 alti_read/*.txt
 alti_read/*.npy
