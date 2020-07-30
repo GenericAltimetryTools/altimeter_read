@@ -14,6 +14,9 @@ You can download data example from [here](https://www.jianguoyun.com/p/DfGdEB8Q2
 The waveform will be plotted as:
 ![](waveform.png)
 
+The time series of AVISO MMS over South China Sea will be plotted like:
+![](ssh.png)
+
 ## usage
 - Download the py file and example data.
 - Change to correct file dir in the py file.

@@ -16,7 +16,7 @@ import os
 
 
 # ------ Directory contains sentinel3A SRAL data
-dir_setup = os.path.join('..\ex_data', 'S3A_SR_2_WAT____20181229T021438_20181229T025856_20190123T183000_2658_039_317______MAR_O_NT_003.SEN3')
+dir_setup = os.path.join('../ex_data', 'S3A_SR_2_WAT____20181229T021438_20181229T025856_20190123T183000_2658_039_317______MAR_O_NT_003.SEN3')
 # ------ Name of the SRAL file. There have three kinds of S3A data which are the enhanced,standard and the reduced data.
 # ------ Here we choose the enhanced data because it contains the waveform data.
 file_path = os.path.join(dir_setup, 'enhanced_measurement.nc')

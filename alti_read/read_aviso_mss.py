@@ -8,18 +8,30 @@ import netCDF4 as ncf
 import sys
 import pickle
 
-## -- Get the user home directory
+# ---------------Introduction-----------------------------
+# This is a simple program to read and process the AVISO monthly MSS data.
+# First, you should download some data from AVISO FTP site. Then run this program and get the similar result.
+# leiyang@fio.org.cn
+# 2020-07
+# --------------------------------------------------------
+
+
+# Get the user home directory
 from os.path import expanduser
 import os
-
 home = expanduser("~")
-# ------ Directory contains AVISO SLA data
+
+# set directory containing AVISO SLA data. You should change this to your data location.
 dir_setup = os.path.join(home, 'alti_data', 'avisoMMS')
-# 定义变量
+# define variables
 msla = []
 tims = []
-for filename in os.listdir(dir_setup)[1:2]:
-    print(filename)
+
+filelist = sorted(os.listdir(dir_setup))  # sort the file name list
+
+
+for filename in filelist[1:]:  # Try to select a small set of data and test it (like one year [1:12]). Otherwise, it will be slow to run all the data.
+    # print(filename)
     # ------ Here we choose the enhanced data because it contains the waveform data.
     file_path = os.path.join(dir_setup, filename)
     print("The Aviso  MSS grid file is:")
@@ -44,40 +56,32 @@ for filename in os.listdir(dir_setup)[1:2]:
     # print(np.shape(tim))
     # print(np.shape(asla))  # 数据是二维的
 
-    print(tim)
+    print('time is:', tim)
     # print(asla[0, 1:300, 1000])
     # print(lat[100])
 
+
     # -----------------------#
     # select data in the south china sea at about 5-20 110-120
+    # Here we can change the selection from 'if' to 'slice' later to get faster. Need to fix.
     # -----------------------#
     tmp = []
-    for i in range(720):
+    for i in range(720):  # 720 this is the resolution along latitude and 1440 is longitude.
         for j in range(1440):
             if lat[i] > 15 and lat[i] < 20:
                 if lon[j]>115 and lon[j]<120:
                     if isinstance(asla[0, i, j], float):
                         tmp2 = asla[0, i, j]
                         tmp.append(tmp2)
-    # ii = 0
-    # jj = 0
-    # for i in lat:
-    #
-    #     for j in lon:
-    #
-    #         if isinstance(asla[0, ii, jj], float):
-    #             tmp2 = asla[0, ii, jj]
-    #             print(ii, jj)
-    #             ii = ii+1
-    #             jj = jj+1
-    #             tmp.append(tmp2)
 
-    print(len(tmp))
+    # print(len(tmp))
     tmp3 = np.mean(tmp)
     msla.append(tmp3)
     tims.append(tim)
     print('\n')
-#  绘图，时间序列
+
+#  plot the time series of sea surface level over south china sea
+
 plt.plot(tims, msla)
 plt.show()
 
