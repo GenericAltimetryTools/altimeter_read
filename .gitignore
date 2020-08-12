@@ -3,6 +3,7 @@
 *.gz
 alti_read/*.txt
 alti_read/*.npy
+alti_read/*.kml
 *.dat
 data/
 ex_data/
