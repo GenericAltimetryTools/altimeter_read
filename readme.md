@@ -23,7 +23,7 @@ The seasonal signals were not excluded here.
 
 The water level of the Poyang Lake during the flood will be estimated like (without data filtering and waveform retracking):
 <center class = "half">
-<img src = “wls.png”  width = “50%” align = left><img src = pylake.png  width = “50%” align = right>
+<img src = “wls.png”  width = “50%” align = left><img src = "pylake.png"  width = “50%” align = right>
 </center>
 
 ## usage
