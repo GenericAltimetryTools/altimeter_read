@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # coding=utf-8
 
+# Main functions:
+# -Read Sentinel-3 A/B altimeter GDR data
+# -Calculate the 20Hz water level over lakes and wide rivers
+# -Plot waveforms of the altimeter. From the waveforms, the surface could be determined, such as sea ice, calm water, ocean.
+#
+
 from netCDF4 import Dataset
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,7 +33,7 @@ s3ak = []  # parameter names
 pass_num = 260  # 152,260 for S3A; 317 For S3B
 s_model = "LAN"  # define the data mode: `LAN` (land) or `MAR` (marine)
 plot_wave = "no"  # Plot wave form. `yes` or `no`
-site = "jiujiang"  # choose the site. `jiujiang`| `py_lake`
+site = "py_lake"  # choose the site. `jiujiang`| `py_lake`
 output_name = "no"  # If output the names of the variables.
 # define the latitude boundary
 if pass_num == 152:
@@ -300,4 +306,4 @@ if len(s3ak) != 0 and output_name == "yes":
         fh.write(str(i)+'\n')
     fh.close()
 else:
-    print("data are not correct")
+    print("You choose not to output the variables to file")
