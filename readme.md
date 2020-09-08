@@ -19,16 +19,18 @@ In the future, I will add the surface type determination (sea ice types, ponds i
 
 The time series of AVISO MMS over South China Sea will be plotted like:
 ![](ssh.png)
+
 The seasonal signals were not excluded here. 
 
 The water level of the Poyang Lake during the flood will be estimated like (without data filtering and waveform retracking):
 
-<center class = "half">
+<center>
 <fgure>
 <img src = wls.png  width = “50%” align = left>
 <img src = pylake.png  width = “50%” align = right>
 </fgure>
 </center>
+
 
 ## usage
 - Download the py file and example data.
