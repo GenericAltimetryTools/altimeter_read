@@ -22,8 +22,12 @@ The time series of AVISO MMS over South China Sea will be plotted like:
 The seasonal signals were not excluded here. 
 
 The water level of the Poyang Lake during the flood will be estimated like (without data filtering and waveform retracking):
+
 <center class = "half">
-<img src = “wls.png”  width = “50%” align = left><img src = "pylake.png"  width = “50%” align = right>
+<fgure>
+<img src = wls.png  width = “50%” align = left>
+<img src = pylake.png  width = “50%” align = right>
+</fgure>
 </center>
 
 ## usage
